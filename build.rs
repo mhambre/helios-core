@@ -11,7 +11,7 @@ fn main() {
     let project_dir = env::var("CARGO_MANIFEST_DIR").expect("CARGO_MANIFEST_DIR not set");
 
     let (out_format, out_arch) = match target.as_str() {
-        "x86_64-helios" => ("elf64-x86-64", "i386:x86-64"),
+        "i686-helios" => ("elf32-i386", "i386"),
         other => panic!("unsupported TARGET for linker script: {other}"),
     };
 
