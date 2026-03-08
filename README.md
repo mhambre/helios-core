@@ -31,5 +31,5 @@ cargo +nightly build \
   -p helios-core \
   -Zjson-target-spec \
   -Z build-std=core \
-  --target template/i686-helios.json
+  --target template/x86_64-helios.json
 ```
